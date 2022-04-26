@@ -1,0 +1,15 @@
+.list {
+  padding: 20px 20px 0px 40px;
+}
+  
+.text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.error {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #c75353;
+}
