@@ -28,9 +28,7 @@ export default function MovieDetailsView() {
 
   useEffect(() => {
     const movieId = Number(movieID);
-    movieApi.fetchMovie(movieId).then(movie => {
-      setMovie(movie);
-    });
+    movieApi.fetchMovie(movieId).then(setMovie);
   }, [movieID]);
 
   const handleGoBack = () => {
