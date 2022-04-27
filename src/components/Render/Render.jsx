@@ -21,7 +21,7 @@ const Render= () => {
           <Route path="/movie/:movieID" >
             <MovieDetailsView />
           </Route>
-          <Route path="/movie" >
+          <Route path="/movie" exact>
             <MoviesView />
           </Route>
           <Route >
