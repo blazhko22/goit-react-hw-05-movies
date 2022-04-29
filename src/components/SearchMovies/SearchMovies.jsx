@@ -45,7 +45,6 @@ const SearchMovies = () => {
         className={s.searchForm_input}
         type="text"
         placeholder="Search for movie..."
-        value={searchTerm}
         onChange={handleFilter}
         onSubmit={getData}
       />
