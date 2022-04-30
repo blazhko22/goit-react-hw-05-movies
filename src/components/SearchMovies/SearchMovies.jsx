@@ -119,7 +119,7 @@ const SearchMovies = () => {
   const [arrayOfFilms, setArrayOfFilms] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const query = searchParams.get('query').trim().replace(/ +/g, ' ');
+  const query = searchParams.get('query');
 
   useEffect(() => {
     query &&
