@@ -1,11 +1,12 @@
-import Reviews from '../components/Reviews/Reviews';
-import MovieCast from '../components/MovieCast/MovieCast';
 import { fetchById } from '../services/fetchMovies';
 import { useParams, useNavigate, Routes } from 'react-router';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Route } from 'react-router';
 import s from './MovieDetailsView.module.css';
+
+const Reviews = lazy(() => import('../components/Reviews/Reviews'));
+const MovieCast = lazy(() => import('../components/MovieCast/MovieCast'));
 
 export default function MovieDetailsView() {
   const { movieId } = useParams();
